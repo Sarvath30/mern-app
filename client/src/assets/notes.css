@@ -1,0 +1,10 @@
+.text_overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 1.1em;
+  font-weight: 600;
+}

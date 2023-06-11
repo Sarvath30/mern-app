@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+/* variables css*/
+:root {
+  --color-solid-white: #ffffff;
+  --color-solid-black: #000000;
+  --color-solid-lightgrey: #e2dfdf;
+  --color-solid-darkgrey: #9b9b9b;
+  --color-solid-darkblue: #4285f4;
+  --color-solid-lightblue: #63c6ff;
+  --color-solid-red: #db4437;
+  --color-solid-yellow: #f4b400;
+  --color-solid-green: #0f9d58;
+  --color-solid-orange: #fc7f1b;
+  --color-solid-purple: #665cfb;
+  --color-shade-yellow: #f9d67d;
+  --color-shade-red: #ff7a6f;
+  --color-shade-orange: #ffbf8c;
+  --color-shade-purple: #b8b2ff;
+  --color-shade-blue: #e5f2ff;
+  --color-lightshade-white: #fef4ec;
+  --color-lightshade-blue: #ddf4ff;
+  --color-lightshade-grey: #f1f0ff;
+  --color-lightshade-orange: #fef4ec;
+  --color-border: #d9d9d9;
+  --color-table-data: #545454;
+  --color-gradient-blue: linear-gradient(90deg, #4285f4 0%, #63c6ff 100%);
+  --color-gradient-red: linear-gradient(90deg, #db4437 0%, #ff7a6f 100%);
+  --color-gradient-yellow: linear-gradient(90deg, #f4b400 0%, #f9d67d 100%);
+  --color-gradient-orange: linear-gradient(90deg, #fc7f1b 0%, #ffbf8c 100%);
+  --color-gradient-purple: linear-gradient(90deg, #665cfb 0%, #b8b2ff 100%);
+  --color-gradient-bg: linear-gradient(
+    to right,
+    rgba(3, 168, 0, 0.1),
+    rgba(1, 119, 251, 0.1),
+    rgba(242, 71, 59, 0.1),
+    rgba(249, 190, 57, 0.1)
+  );
+  --color-card-glass: linear-gradient(
+    110.14deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(246, 246, 246, 0.35) 78.44%
+  );
+  --color-glass-grey: linear-gradient(
+    105.38deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(246, 246, 246, 0.35) 100%
+  );
+}
+
+/* Gradient background */
+.gradient-bg {
+  background-image: var(--color-gradient-bg);
+  min-height: 100vh;
+}
+
+/* padding & margin */
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-5 {
+  padding: 5px !important;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.p-15 {
+  padding: 15px !important;
+}
+
+.p-20 {
+  padding: 20px !important;
+}
+
+.p-25 {
+  padding: 25px !important;
+}
+
+.p-30 {
+  padding: 30px !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.m-5 {
+  margin: 5px !important;
+}
+
+.m-10 {
+  margin: 10px !important;
+}
+
+.m-15 {
+  margin: 15px !important;
+}
+
+.m-20 {
+  margin: 20px !important;
+}
+
+.m-25 {
+  margin: 25px !important;
+}
+
+.m-30 {
+  margin: 30px !important;
+}
+
+.ml-10 {
+  margin-left: 30px !important;
+}
+
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-25 {
+  margin-top: 25px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.pr-10 {
+  padding-right: 10px !important;
+}
+
+/*Custom Scroll bar css */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-left: 5px solid transparent;
+  border-radius: 50px;
+  transform: rotateX(180deg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-solid-lightblue);
+  border-left: 5px solid transparent;
+  border-radius: 50px;
+  transform: rotateX(180deg);
+}
+
+/* Alignment */
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.vertical-align {
+  vertical-align: middle !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
